@@ -1,4 +1,4 @@
-package com.example.trabalhofinal_mobile.models.views;
+package com.example.trabalhofinal_mobile.views;
 
 import android.os.Bundle;
 
