@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Cardápio</string>
+    <string name="btnTextAcompanhamentos">Acompanhamentos</string>
+    <string name="TituloTextMain">Bem-Vindo!</string>
+    <string name="btnTextPrincipais">Principais</string>
+    <string name="btnTextBebidas">Bebidas</string>
 </resources>

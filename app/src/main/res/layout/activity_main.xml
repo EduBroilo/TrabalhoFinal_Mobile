@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,12 +8,14 @@
     android:layout_height="match_parent"
     tools:context=".views.MainActivity">
 
+    <!-- Título Interface -->
+
     <TextView
         android:id="@+id/Titulo_Main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="160dp"
-        android:text="Bem-Vindo!"
+        android:text="@string/TituloTextMain"
         android:textColor="@color/purple_700"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,34 +23,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- btn Acompanhamentos -->
+
     <Button
         android:id="@+id/btnAcompanhamentos"
         android:layout_width="240dp"
         android:layout_height="63dp"
         android:layout_marginTop="336dp"
-        android:text="Acompanhamentos"
+        android:text="@string/btnTextAcompanhamentos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Titulo_Main" />
+
+    <!-- btn Principais -->
 
     <Button
         android:id="@+id/btnPrincipais"
         android:layout_width="240dp"
         android:layout_height="63dp"
         android:layout_marginTop="18dp"
-        android:text="Principais"
+        android:text="@string/btnTextPrincipais"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAcompanhamentos" />
+
+    <!-- btn Bebidas -->
 
     <Button
         android:id="@+id/btnBebidas"
         android:layout_width="240dp"
         android:layout_height="63dp"
         android:layout_marginTop="18dp"
-        android:text="Bebidas"
+        android:text="@string/btnTextBebidas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
