@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
+
+        //
         setContentView(R.layout.activity_main);
 
         // Exemplos categorias
@@ -40,11 +42,9 @@ public class MainActivity extends AppCompatActivity {
         Cardapio.addItemCardapio(burger);
         Cardapio.addItemCardapio(fries);
 
-        // Step 4: Retrieve and display the menu items (for example, logging them)
 
-        List<ItensCardapio> menuItems = Cardapio.getItensCardapio();
-        for (ItensCardapio item : menuItems) {
-            Log.d("MenuActivity", item.toString());
-        }
+        // Layout
+
+
     }
 }

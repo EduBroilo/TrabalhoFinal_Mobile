@@ -7,4 +7,50 @@
     android:layout_height="match_parent"
     tools:context=".views.MainActivity">
 
+    <TextView
+        android:id="@+id/Titulo_Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="Bem-Vindo!"
+        android:textColor="@color/purple_700"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAcompanhamentos"
+        android:layout_width="240dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="336dp"
+        android:text="Acompanhamentos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo_Main" />
+
+    <Button
+        android:id="@+id/btnPrincipais"
+        android:layout_width="240dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="18dp"
+        android:text="Principais"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAcompanhamentos" />
+
+    <Button
+        android:id="@+id/btnBebidas"
+        android:layout_width="240dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="18dp"
+        android:text="Bebidas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPrincipais" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
