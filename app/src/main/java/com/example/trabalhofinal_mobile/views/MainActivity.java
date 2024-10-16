@@ -1,7 +1,10 @@
 package com.example.trabalhofinal_mobile.views;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
 
-        //
+        // layout Main interface
+
         setContentView(R.layout.activity_main);
 
         // Exemplos categorias
@@ -29,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         CategoriaCardapio mainCourse = new CategoriaCardapio("Principal", "Pratos principais.");
         CategoriaCardapio sideDishes = new CategoriaCardapio("Acompanhamentos", "Petiscos para acompanhar a comida.");
 
-        // Exemplos Itens den Cardapio
+        // Exemplos Itens den Cardápio
 
         ItensCardapio coke = new ItensCardapio("Coke", "Coca-Cola", "Small", 3.99, beverages);
         ItensCardapio burger = new ItensCardapio("Burger", "Hamburger de frango, 300g", "Small", 23.40, mainCourse);
@@ -42,8 +46,41 @@ public class MainActivity extends AppCompatActivity {
         Cardapio.addItemCardapio(burger);
         Cardapio.addItemCardapio(fries);
 
+        // ClickListener Acompanhamentos
 
-        // Layout
+        Button btnAcompanhamentos = findViewById(R.id.btnAcompanhamentos);
+
+        btnAcompanhamentos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CardapioAcompanhamentoActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // ClickListener Principais
+
+        Button btnPrincipais = findViewById(R.id.btnPrincipais);
+
+        btnPrincipais.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CardapioPrincipalActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // ClickListener Bebidas
+
+        Button btnBebidas = findViewById(R.id.btnBebidas);
+
+        btnBebidas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CardapioBebidasActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

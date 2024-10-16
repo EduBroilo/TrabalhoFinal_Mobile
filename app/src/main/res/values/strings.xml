@@ -4,4 +4,13 @@
     <string name="TituloTextMain">Bem-Vindo!</string>
     <string name="btnTextPrincipais">Principais</string>
     <string name="btnTextBebidas">Bebidas</string>
+    <string name="TituloInterfacePrincipais">Pratos Principais</string>
+    <string name="TituloInterfaceAcompanhamento">Acompanhamentos</string>
+    <string name="TituloInterfaceBebidas">Bebidas</string>
+    <string name="TituloInterfaceNovoItem">Novo Item</string>
+    <string name="TextCampoNome">Nome</string>
+    <string name="TextCampoDescricao">Descrição</string>
+    <string name="TexCampoCategoria">Categoria</string>
+    <string name="TexCampoTamanho">Tamanho</string>
+    <string name="TexCampoPreco">Preço</string>
 </resources>
