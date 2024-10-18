@@ -62,4 +62,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnPrincipais" />
 
+    <!-- btn Adicionar -->
+
+    <Button
+        android:id="@+id/btnAdicionar"
+        android:layout_width="240dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/btnTextAdicionar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBebidas" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

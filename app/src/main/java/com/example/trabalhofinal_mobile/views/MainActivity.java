@@ -82,6 +82,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // ClickListener Adicionar
+
+        Button btnAdicionar = findViewById(R.id.btnAdicionar);
+
+        btnAdicionar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AdicionarItemActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

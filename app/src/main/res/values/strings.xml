@@ -14,4 +14,5 @@
     <string name="TexCampoTamanho">Tamanho</string>
     <string name="TexCampoPreco">Preço</string>
     <string name="TextbtnAdicionar">Adicionar</string>
+    <string name="btnTextAdicionar">Adicionar</string>
 </resources>
