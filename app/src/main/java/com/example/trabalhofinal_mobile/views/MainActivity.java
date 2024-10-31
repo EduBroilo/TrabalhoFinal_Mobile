@@ -2,7 +2,6 @@ package com.example.trabalhofinal_mobile.views;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -11,10 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.trabalhofinal_mobile.R;
 import com.example.trabalhofinal_mobile.models.CategoriaCardapio;
-import com.example.trabalhofinal_mobile.models.ItensCardapio;
+import com.example.trabalhofinal_mobile.models.ItemsCardapio;
 import com.example.trabalhofinal_mobile.repository.ItemCardapioRepository;
-
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Exemplos Itens den Cardápio
 
-        ItensCardapio coke = new ItensCardapio("Coke", "Coca-Cola", "Small", 3.99, beverages);
-        ItensCardapio burger = new ItensCardapio("Burger", "Hamburger de frango, 300g", "Small", 23.40, mainCourse);
-        ItensCardapio fries = new ItensCardapio("Fries", "Batata Frita, 200g", "Small", 7.99, sideDishes);
+        ItemsCardapio coke = new ItemsCardapio("Coke", "Coca-Cola", "Small", 3.99, beverages);
+        ItemsCardapio burger = new ItemsCardapio("Burger", "Hamburger de frango, 300g", "Small", 23.40, mainCourse);
+        ItemsCardapio fries = new ItemsCardapio("Fries", "Batata Frita, 200g", "Small", 7.99, sideDishes);
 
         // Exemplo Cardápio
 

@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.trabalhofinal_mobile.R;
 import com.example.trabalhofinal_mobile.models.CategoriaCardapio;
-import com.example.trabalhofinal_mobile.models.ItensCardapio;
+import com.example.trabalhofinal_mobile.models.ItemsCardapio;
 import com.example.trabalhofinal_mobile.repository.ItemCardapioRepository;
 
 public class AdicionarItemActivity extends AppCompatActivity {
@@ -45,7 +45,7 @@ public class AdicionarItemActivity extends AppCompatActivity {
                 // Cria Objetos
 
                 CategoriaCardapio categoriaCardapio = new CategoriaCardapio(category, null);
-                ItensCardapio newItem = new ItensCardapio(name, description, size, price, categoriaCardapio);
+                ItemsCardapio newItem = new ItemsCardapio(name, description, size, price, categoriaCardapio);
 
                 // Adiciona à Instância
 

@@ -1,13 +1,13 @@
 package com.example.trabalhofinal_mobile.models;
 
-public class ItensCardapio {
+public class ItemsCardapio {
     private String name;
     private String description;
     private String size;
     private double price;
     private CategoriaCardapio category;  // Using Category class
 
-    public ItensCardapio(String name, String description, String size, double price, CategoriaCardapio category) {
+    public ItemsCardapio(String name, String description, String size, double price, CategoriaCardapio category) {
         this.name = name;
         this.description = description;
         this.size = size;
