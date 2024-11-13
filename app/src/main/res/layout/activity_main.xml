@@ -6,7 +6,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.MainActivity">
+    tools:context=".views.MainActivity"
+    android:background="@color/black">
 
     <!-- Título Interface -->
 
@@ -16,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="160dp"
         android:text="@string/TituloTextMain"
-        android:textColor="@color/purple_700"
+        android:textColor="@color/white"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

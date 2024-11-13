@@ -8,7 +8,7 @@ import java.util.List;
 public class Cart {
 
     private static Cart instance;
-    private List<ItemsCardapio> selectedItems;
+    private final List<ItemsCardapio> selectedItems;
 
     private Cart() {
         selectedItems = new ArrayList<>();

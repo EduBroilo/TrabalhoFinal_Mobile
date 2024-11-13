@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Exemplos Itens den Cardápio
 
-        ItemsCardapio coke = new ItemsCardapio("Coke", "Coca-Cola", "Small", 3.99, beverages);
-        ItemsCardapio burger = new ItemsCardapio("Burger", "Hamburger de frango, 300g", "Small", 23.40, mainCourse);
-        ItemsCardapio fries = new ItemsCardapio("Fries", "Batata Frita, 200g", "Small", 7.99, sideDishes);
+        ItemsCardapio coke = new ItemsCardapio("Coke", "Coca-Cola", "pequeno", 3.99, beverages);
+        ItemsCardapio burger = new ItemsCardapio("Burger", "Hamburger de frango, 300g", "pequeno", 23.40, mainCourse);
+        ItemsCardapio fries = new ItemsCardapio("Fries", "Batata Frita, 200g", "pequeno", 7.99, sideDishes);
 
         // Exemplo Cardápio
 

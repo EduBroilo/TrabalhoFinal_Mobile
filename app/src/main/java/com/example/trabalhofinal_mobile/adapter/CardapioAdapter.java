@@ -3,6 +3,7 @@ package com.example.trabalhofinal_mobile.adapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -23,16 +24,18 @@ public class CardapioAdapter extends RecyclerView.Adapter<CardapioAdapter.Cardap
     @Override
     public CardapioAdapter.CardapioViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View cl = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_view_items, parent, false);
-        CardapioViewHolder vh = new CardapioViewHolder(cl);
-        return vh;
+        return new CardapioViewHolder(cl);
     }
 
     @Override
     public void onBindViewHolder(@NonNull CardapioAdapter.CardapioViewHolder holder, int position) {
         ItemsCardapio item = this.itens.get(position);
 
-        // TODO: set Text to view
-       // holder.getView().findViewById();
+        holder.itemName.setText(item.getName());
+        holder.itemSize.setText(item.getSize());
+        holder.itemPrice.setText(String.format("R$%.2f", item.getPrice()));
+        holder.itemDescription.setText(item.getDescription());
+
     }
 
     @Override
@@ -42,14 +45,15 @@ public class CardapioAdapter extends RecyclerView.Adapter<CardapioAdapter.Cardap
 
     class CardapioViewHolder extends RecyclerView.ViewHolder {
         private View view;
+        TextView itemName, itemSize, itemPrice, itemDescription;
 
         public CardapioViewHolder(@NonNull View view) {
             super(view);
-            this.view = view;
+            itemName = itemView.findViewById(R.id.itemName);
+            itemSize = itemView.findViewById(R.id.itemSize);
+            itemPrice = itemView.findViewById(R.id.itemPrice);
+            itemDescription = itemView.findViewById(R.id.itemDescription);;
 
-        }
-        public View getView() {
-            return this.view;
         }
     }
 }
