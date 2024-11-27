@@ -9,7 +9,6 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.trabalhofinal_mobile.R;
-import com.example.trabalhofinal_mobile.models.CategoriaCardapio;
 import com.example.trabalhofinal_mobile.models.ItemsCardapio;
 import com.example.trabalhofinal_mobile.repository.ItemCardapioRepository;
 
@@ -44,16 +43,13 @@ public class AdicionarItemActivity extends AppCompatActivity {
 
                 // Cria Objetos
 
-                CategoriaCardapio categoriaCardapio = new CategoriaCardapio(category, null);
-                ItemsCardapio newItem = new ItemsCardapio(name, description, size, price, categoriaCardapio);
+                //ItemsCardapio newItem = new ItemsCardapio(name, description, size, price, category);
 
                 // Adiciona à Instância
 
-                ItemCardapioRepository Cardapio = ItemCardapioRepository.getInstance();
-                Cardapio.addItemCardapio(newItem);
-
+              // ItemCardapioRepository Cardapio = ItemCardapioRepository.getInstance(this);
+             //   Cardapio.addItemCardapio(newItem);
             }
         });
-
     }
 }

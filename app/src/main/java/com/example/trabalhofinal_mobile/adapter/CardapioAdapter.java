@@ -44,7 +44,6 @@ public class CardapioAdapter extends RecyclerView.Adapter<CardapioAdapter.Cardap
     }
 
     class CardapioViewHolder extends RecyclerView.ViewHolder {
-        private View view;
         TextView itemName, itemSize, itemPrice, itemDescription;
 
         public CardapioViewHolder(@NonNull View view) {

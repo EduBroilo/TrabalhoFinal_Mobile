@@ -9,7 +9,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.trabalhofinal_mobile.R;
 import com.example.trabalhofinal_mobile.adapter.CardapioAdapter;
+import com.example.trabalhofinal_mobile.models.ItemsCardapio;
 import com.example.trabalhofinal_mobile.repository.ItemCardapioRepository;
+
+import java.util.List;
 
 public class CardapioBebidasActivity extends AppCompatActivity {
 
@@ -23,7 +26,13 @@ public class CardapioBebidasActivity extends AppCompatActivity {
         RecyclerView rv = findViewById(R.id.recyclerViewBebidas);
         LinearLayoutManager lln = new LinearLayoutManager(this);
         rv.setLayoutManager(lln);
-        CardapioAdapter ca = new CardapioAdapter(ItemCardapioRepository.getInstance().getItensCardapio());
-        rv.setAdapter(ca);
+
+        List<ItemsCardapio> itemsList = ItemCardapioRepository.getInstance(getApplicationContext())
+                .getAppDatabase()
+                .ItemCardapioDao()
+                .getAll();
+
+        CardapioAdapter adapter = new CardapioAdapter(itemsList);
+        rv.setAdapter(adapter);
     }
 }

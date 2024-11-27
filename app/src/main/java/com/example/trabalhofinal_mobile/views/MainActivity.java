@@ -9,7 +9,6 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.trabalhofinal_mobile.R;
-import com.example.trabalhofinal_mobile.models.CategoriaCardapio;
 import com.example.trabalhofinal_mobile.models.ItemsCardapio;
 import com.example.trabalhofinal_mobile.repository.ItemCardapioRepository;
 
@@ -24,24 +23,26 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        // Exemplos categorias
-
-        CategoriaCardapio beverages = new CategoriaCardapio("Bebidas", "Bebidas, quente e frias.");
-        CategoriaCardapio mainCourse = new CategoriaCardapio("Principal", "Pratos principais.");
-        CategoriaCardapio sideDishes = new CategoriaCardapio("Acompanhamentos", "Petiscos para acompanhar a comida.");
-
         // Exemplos Itens den Cardápio
 
-        ItemsCardapio coke = new ItemsCardapio("Coke", "Coca-Cola", "pequeno", 3.99, beverages);
-        ItemsCardapio burger = new ItemsCardapio("Burger", "Hamburger de frango, 300g", "pequeno", 23.40, mainCourse);
-        ItemsCardapio fries = new ItemsCardapio("Fries", "Batata Frita, 200g", "pequeno", 7.99, sideDishes);
+        ItemCardapioRepository Cardapio = ItemCardapioRepository.getInstance(this);
 
-        // Exemplo Cardápio
+        ItemsCardapio novo = new ItemsCardapio();
+        novo.setId(0);
+        novo.setName("Coke");
+        novo.setSize("pequeno");
+        novo.setDescription("Coca-Cola");
+        novo.setCategory("Bebidas");
+        novo.setPrice(3.99);
 
-        ItemCardapioRepository Cardapio = ItemCardapioRepository.getInstance();
-        Cardapio.addItemCardapio(coke);
-        Cardapio.addItemCardapio(burger);
-        Cardapio.addItemCardapio(fries);
+      //  Cardapio.insert(novo);
+
+
+     //   ItemsCardapio burger = new ItemsCardapio("Burger", "Hamburger de frango, 300g", "pequeno", 23.40, "Principal");
+     //   ItemsCardapio fries = new ItemsCardapio("Fries", "Batata Frita, 200g", "pequeno", 7.99, "Acompanhamentos");
+     //   Cardapio.insert(coke);
+      //  Cardapio.insert(burger);
+      //  Cardapio.insert(fries);
 
         // ClickListener Acompanhamentos
 
