@@ -34,8 +34,7 @@ public class MainActivity extends AppCompatActivity {
         novo.setDescription("Coca-Cola");
         novo.setCategory("Bebidas");
         novo.setPrice(3.99);
-
-      //  Cardapio.insert(novo);
+        Cardapio.insert(novo);
 
 
      //   ItemsCardapio burger = new ItemsCardapio("Burger", "Hamburger de frango, 300g", "pequeno", 23.40, "Principal");

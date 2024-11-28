@@ -20,7 +20,7 @@ public class ItemCardapioRepository {
 
     private ItemCardapioRepository() {
         baseDadosCardapio = new ArrayList<>();
-        db = Room.databaseBuilder(context, AppDatabase.class, "banco_da_app").allowMainThreadQueries().build();
+        db = Room.databaseBuilder(context, AppDatabase.class, "banco_da_app").allowMainThreadQueries().fallbackToDestructiveMigration().build();
         baseDadosCardapio.addAll(db.ItemCardapioDao().getAll());
     }
 
