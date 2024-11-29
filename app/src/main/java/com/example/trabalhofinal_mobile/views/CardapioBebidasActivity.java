@@ -30,7 +30,7 @@ public class CardapioBebidasActivity extends AppCompatActivity {
         List<ItemsCardapio> itemsList = ItemCardapioRepository.getInstance(getApplicationContext())
                 .getAppDatabase()
                 .ItemCardapioDao()
-                .getAll();
+                .getMenuItemsByCategory("Bebidas");;
 
         CardapioAdapter adapter = new CardapioAdapter(itemsList);
         rv.setAdapter(adapter);

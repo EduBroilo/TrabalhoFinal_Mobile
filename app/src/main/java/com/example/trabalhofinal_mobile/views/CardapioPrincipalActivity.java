@@ -31,7 +31,7 @@ public class CardapioPrincipalActivity extends AppCompatActivity {
         List<ItemsCardapio> itemsList = ItemCardapioRepository.getInstance(getApplicationContext())
                 .getAppDatabase()
                 .ItemCardapioDao()
-                .getAll();
+                .getMenuItemsByCategory("Principal");
 
         CardapioAdapter adapter = new CardapioAdapter(itemsList);
         rv.setAdapter(adapter);

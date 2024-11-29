@@ -23,26 +23,6 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        // Exemplos Itens den Cardápio
-
-        ItemCardapioRepository Cardapio = ItemCardapioRepository.getInstance(this);
-
-        ItemsCardapio novo = new ItemsCardapio();
-        novo.setId(0);
-        novo.setName("Coke");
-        novo.setSize("pequeno");
-        novo.setDescription("Coca-Cola");
-        novo.setCategory("Bebidas");
-        novo.setPrice(3.99);
-        Cardapio.insert(novo);
-
-
-     //   ItemsCardapio burger = new ItemsCardapio("Burger", "Hamburger de frango, 300g", "pequeno", 23.40, "Principal");
-     //   ItemsCardapio fries = new ItemsCardapio("Fries", "Batata Frita, 200g", "pequeno", 7.99, "Acompanhamentos");
-     //   Cardapio.insert(coke);
-      //  Cardapio.insert(burger);
-      //  Cardapio.insert(fries);
-
         // ClickListener Acompanhamentos
 
         Button btnAcompanhamentos = findViewById(R.id.btnAcompanhamentos);

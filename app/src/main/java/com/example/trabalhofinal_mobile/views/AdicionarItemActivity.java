@@ -19,6 +19,8 @@ public class AdicionarItemActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
 
+        ItemCardapioRepository Cardapio = ItemCardapioRepository.getInstance(this);
+
         setContentView(R.layout.activity_adicionar_item);
 
         EditText editTextName = findViewById(R.id.EditTextNome);
@@ -43,12 +45,18 @@ public class AdicionarItemActivity extends AppCompatActivity {
 
                 // Cria Objetos
 
-                //ItemsCardapio newItem = new ItemsCardapio(name, description, size, price, category);
+
+                ItemsCardapio novo = new ItemsCardapio();
+                novo.setId(0);
+                novo.setName(name);
+                novo.setSize(size);
+                novo.setDescription(description);
+                novo.setCategory(category);
+                novo.setPrice(price);
 
                 // Adiciona à Instância
 
-              // ItemCardapioRepository Cardapio = ItemCardapioRepository.getInstance(this);
-             //   Cardapio.addItemCardapio(newItem);
+                Cardapio.insert(novo);
             }
         });
     }
