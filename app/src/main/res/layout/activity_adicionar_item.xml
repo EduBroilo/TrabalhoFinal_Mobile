@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".views.AdicionarItemActivity">
 
     <TextView
@@ -13,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="160dp"
         android:text="@string/TituloInterfaceNovoItem"
-        android:textColor="@color/purple_700"
+        android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -23,11 +24,12 @@
     <EditText
         android:id="@+id/EditTextNome"
         android:layout_width="358dp"
-        android:layout_height="52dp"
+        android:layout_height="60dp"
         android:layout_marginTop="80dp"
         android:ems="10"
         android:inputType="text"
-        android:text="@string/TextCampoNome"
+        android:hint="@string/TextCampoNome"
+        android:background="@drawable/ic_edittext_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,11 +38,12 @@
     <EditText
         android:id="@+id/EditTextDescricao"
         android:layout_width="358dp"
-        android:layout_height="52dp"
+        android:layout_height="60dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="text"
-        android:text="@string/TextCampoDescricao"
+        android:hint="@string/TextCampoDescricao"
+        android:background="@drawable/ic_edittext_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,11 +52,12 @@
     <EditText
         android:id="@+id/EditTextCategoria"
         android:layout_width="358dp"
-        android:layout_height="52dp"
+        android:layout_height="60dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="text"
-        android:text="@string/TexCampoCategoria"
+        android:hint="@string/TexCampoCategoria"
+        android:background="@drawable/ic_edittext_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,35 +66,40 @@
     <EditText
         android:id="@+id/EditTextTamanho"
         android:layout_width="150dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="40dp"
+        android:layout_height="55dp"
         android:layout_marginTop="24dp"
+        android:background="@drawable/ic_edittext_background"
         android:ems="10"
+        android:hint="@string/TexCampoTamanho"
         android:inputType="text"
-        android:text="@string/TexCampoTamanho"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextCategoria"/>
+        app:layout_constraintStart_toStartOf="@+id/EditTextCategoria"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextCategoria" />
 
     <EditText
         android:id="@+id/EditTextPreco"
         android:layout_width="150dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="@string/TexCampoPreco"
+        android:layout_height="55dp"
         android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/EditTextTamanho"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextCategoria"/>
+        android:background="@drawable/ic_edittext_background"
+        android:ems="10"
+        android:hint="@string/TexCampoPreco"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/EditTextCategoria"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextCategoria" />
 
     <Button
         android:id="@+id/btnAdicionar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        android:backgroundTint="@color/black"
         android:text="@string/TextbtnAdicionar"
+        app:cornerRadius="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextTamanho" />
+        app:layout_constraintTop_toBottomOf="@+id/EditTextTamanho"
+/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

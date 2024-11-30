@@ -57,6 +57,12 @@ public class AdicionarItemActivity extends AppCompatActivity {
                 // Adiciona à Instância
 
                 Cardapio.insert(novo);
+
+                editTextName.setText("");
+                editTextCategory.setText("");
+                editTextDescription.setText("");
+                editTextPrice.setText("");
+                editTextSize.setText("");
             }
         });
     }
