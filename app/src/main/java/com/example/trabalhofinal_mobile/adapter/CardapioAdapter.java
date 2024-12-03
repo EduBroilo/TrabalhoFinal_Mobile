@@ -15,9 +15,14 @@ import java.util.List;
 
 public class CardapioAdapter extends RecyclerView.Adapter<CardapioAdapter.CardapioViewHolder> {
     private List<ItemsCardapio> itens;
+    private onItemClickListener listener;
 
     public CardapioAdapter(List<ItemsCardapio> itens) {
         this.itens = itens;
+    }
+
+    public void setOnItemClickListener(onItemClickListener listener) {
+        this.listener = listener;
     }
 
     @NonNull
@@ -36,6 +41,11 @@ public class CardapioAdapter extends RecyclerView.Adapter<CardapioAdapter.Cardap
         holder.itemPrice.setText(String.format("R$%.2f", item.getPrice()));
         holder.itemDescription.setText(item.getDescription());
 
+        holder.itemView.setOnClickListener(v -> {
+            if (listener != null) {
+                listener.onItemClick(item);
+            }
+        });
     }
 
     @Override
@@ -54,5 +64,9 @@ public class CardapioAdapter extends RecyclerView.Adapter<CardapioAdapter.Cardap
             itemDescription = itemView.findViewById(R.id.itemDescription);;
 
         }
+    }
+
+    public interface onItemClickListener {
+        void onItemClick(ItemsCardapio item);
     }
 }
