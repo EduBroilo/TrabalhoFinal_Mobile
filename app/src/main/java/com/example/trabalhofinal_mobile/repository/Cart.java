@@ -30,7 +30,7 @@ public class Cart {
     }
 
     public List<ItemsCardapio> getSelectedItems() {
-        return new ArrayList<>(selectedItems);
+        return selectedItems;
     }
 
     public void clearSelection() {

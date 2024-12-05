@@ -34,6 +34,7 @@ public class CardapioAdapter extends RecyclerView.Adapter<CardapioAdapter.Cardap
 
     @Override
     public void onBindViewHolder(@NonNull CardapioAdapter.CardapioViewHolder holder, int position) {
+
         ItemsCardapio item = this.itens.get(position);
 
         holder.itemName.setText(item.getName());

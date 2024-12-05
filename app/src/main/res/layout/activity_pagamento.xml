@@ -23,25 +23,41 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewPagamento"
-        android:layout_width="402dp"
-        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
         android:layout_marginTop="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulo_Pagamento" />
 
     <TextView
-        android:id="@+id/itemPrice"
+        android:id="@+id/itemTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Price"
+        android:text="@string/Total_Pagamento"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:layout_marginStart="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/recyclerViewPagamento" />
+
+    <Button
+        android:id="@+id/btnPagar"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="130dp"
+        android:text="@string/btnPagarText"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        android:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewPagamento" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

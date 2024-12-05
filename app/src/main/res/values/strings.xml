@@ -16,4 +16,7 @@
     <string name="TextbtnAdicionar">Adicionar</string>
     <string name="btnTextAdicionar">Adicionar</string>
     <string name="Pagamento">Pagamento</string>
+    <string name="btnTextPagar">Pagar</string>
+    <string name="Total_Pagamento">Total</string>
+    <string name="btnPagarText">Finalizar</string>
 </resources>

@@ -71,5 +71,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // ClickListener Pagamento
+
+        Button btnPagar = findViewById(R.id.btnPagar);
+
+        btnPagar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, PagamentoActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
